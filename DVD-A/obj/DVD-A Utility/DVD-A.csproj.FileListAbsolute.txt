@@ -1,0 +1,19 @@
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\cygwin1.dll
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\dvda-author.exe
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\ffmpeg.exe
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\mkisofs.exe
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\MLP Encoder.exe.config
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\MLP Encoder.exe.manifest
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\MLP Encoder.application
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\MLP Encoder.exe
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\DVD-A Utility\MLP Encoder.pdb
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\DVD-A.csproj.AssemblyReference.cache
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\DVD_A.Form1.resources
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\mlp_encoder.Properties.Resources.resources
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\DVD-A.csproj.GenerateResource.cache
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\DVD-A.csproj.CoreCompileInputs.cache
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\MLP Encoder.TrustInfo.xml
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\MLP Encoder.exe.manifest
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\MLP Encoder.application
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\MLP Encoder.exe
+C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\DVD-A Utility\MLP Encoder.pdb
