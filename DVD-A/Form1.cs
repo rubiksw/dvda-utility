@@ -19,9 +19,15 @@ namespace DVD_A
             InitializeComponent();
 
             ffmpegCheck.Checked = File.Exists(@"ffmpeg.exe");
-            ffmpegErLbl.Visible = !File.Exists(@"ffmpeg.exe");
             mkisofsChk.Checked = File.Exists(@"mkisofs.exe");
-            linkLabel1.Visible = !File.Exists(@"mkisofs.exe");
+            dvdaChk.Checked = File.Exists(@"dvda-author.exe");
+
+            bool passedDependCheck = (File.Exists(@"dvda-author.exe")) & (File.Exists(@"dvda-author.exe")) & (File.Exists(@"mkisofs.exe"));
+            {
+                if (!passedDependCheck) {
+                    MessageBox.Show("You are missing one or more dependencies. This application will not function without them. Please download the latest release from https://github.com/Rubik7711/dvda-utility", "Error! Missing Dependencies", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
 
             System.Windows.Forms.ToolTip btnToolTip = new System.Windows.Forms.ToolTip();
             btnToolTip.SetToolTip(this.button1, "Choose the folder where your audio files are stored.");
@@ -162,11 +168,6 @@ namespace DVD_A
 
         }
 
-        private void ffmpegErLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z");
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -177,9 +178,5 @@ namespace DVD_A
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mkisofs-md5/mkisofs-md5-2.01-Binary.zip");
-        }
     }
 }

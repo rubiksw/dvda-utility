@@ -39,10 +39,9 @@ namespace DVD_A
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.ffmpegCheck = new System.Windows.Forms.CheckBox();
             this.DependLbl = new System.Windows.Forms.Label();
-            this.ffmpegErLbl = new System.Windows.Forms.LinkLabel();
             this.HeadLbl = new System.Windows.Forms.Label();
             this.mkisofsChk = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.dvdaChk = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -140,22 +139,6 @@ namespace DVD_A
             this.DependLbl.TabIndex = 9;
             this.DependLbl.Text = "Dependencies:";
             // 
-            // ffmpegErLbl
-            // 
-            this.ffmpegErLbl.ActiveLinkColor = System.Drawing.Color.Red;
-            this.ffmpegErLbl.AutoSize = true;
-            this.ffmpegErLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.ffmpegErLbl.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.ffmpegErLbl.LinkColor = System.Drawing.Color.Maroon;
-            this.ffmpegErLbl.Location = new System.Drawing.Point(147, 244);
-            this.ffmpegErLbl.Name = "ffmpegErLbl";
-            this.ffmpegErLbl.Size = new System.Drawing.Size(90, 13);
-            this.ffmpegErLbl.TabIndex = 10;
-            this.ffmpegErLbl.TabStop = true;
-            this.ffmpegErLbl.Text = "Download ffmpeg";
-            this.ffmpegErLbl.Visible = false;
-            this.ffmpegErLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ffmpegErLbl_LinkClicked);
-            // 
             // HeadLbl
             // 
             this.HeadLbl.AutoSize = true;
@@ -180,31 +163,26 @@ namespace DVD_A
             this.mkisofsChk.UseVisualStyleBackColor = true;
             this.mkisofsChk.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // linkLabel1
+            // dvdaChk
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Maroon;
-            this.linkLabel1.Location = new System.Drawing.Point(243, 244);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(93, 13);
-            this.linkLabel1.TabIndex = 13;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Download mkisofs";
-            this.linkLabel1.Visible = false;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.dvdaChk.AutoCheck = false;
+            this.dvdaChk.AutoSize = true;
+            this.dvdaChk.Location = new System.Drawing.Point(125, 243);
+            this.dvdaChk.Name = "dvdaChk";
+            this.dvdaChk.Size = new System.Drawing.Size(83, 17);
+            this.dvdaChk.TabIndex = 14;
+            this.dvdaChk.Text = "dvda-author";
+            this.dvdaChk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dvdaChk.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 272);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.dvdaChk);
             this.Controls.Add(this.mkisofsChk);
             this.Controls.Add(this.HeadLbl);
-            this.Controls.Add(this.ffmpegErLbl);
             this.Controls.Add(this.DependLbl);
             this.Controls.Add(this.ffmpegCheck);
             this.Controls.Add(this.progressBar);
@@ -234,10 +212,9 @@ namespace DVD_A
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.CheckBox ffmpegCheck;
         private System.Windows.Forms.Label DependLbl;
-        private System.Windows.Forms.LinkLabel ffmpegErLbl;
         private System.Windows.Forms.Label HeadLbl;
         private System.Windows.Forms.CheckBox mkisofsChk;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.CheckBox dvdaChk;
     }
 }
 
