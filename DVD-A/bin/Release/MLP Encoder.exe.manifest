@@ -43,17 +43,35 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MLP Encoder.exe" size="246736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MLP Encoder.exe" size="248272">
       <assemblyIdentity name="MLP Encoder" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CmxIlzhTZpKiniiZPUPikkU5W6b3unHuDsJHlcONluQ=</dsig:DigestValue>
+        <dsig:DigestValue>TwzMhJSy4X1yQqCFB7qTWfL346IMxOevGLWBBqPeVBQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="cygwin1.dll" size="3458775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>T3oujF1ifNBThQpX+iZice9rzgHRJ9icIi7D2NsVmkc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="dvda-author.exe" size="3561984">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BBhCWTtBTDXzGqUlc2suO7Y3chHUZNFxd0AsIHaQ8jk=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="ffmpeg.exe" size="126480896">
     <hash>
       <dsig:Transforms>
@@ -70,6 +88,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>Qp7JzYQ6UGOU6na4Yh+JBSz2HBcIaX2ojcrgMGHUHJk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="mkisofs.exe" size="840704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0cG5gF7MgcLzaUZ3hLaubusDIcTnbDoYvqLWUxk2X/o=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MLP Encoder.exe.config" size="179">

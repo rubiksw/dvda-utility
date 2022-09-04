@@ -41,6 +41,8 @@ namespace DVD_A
             this.DependLbl = new System.Windows.Forms.Label();
             this.ffmpegErLbl = new System.Windows.Forms.LinkLabel();
             this.HeadLbl = new System.Windows.Forms.Label();
+            this.mkisofsChk = new System.Windows.Forms.CheckBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // button1
@@ -90,7 +92,7 @@ namespace DVD_A
             // 
             // EncodeButt
             // 
-            this.EncodeButt.Location = new System.Drawing.Point(12, 135);
+            this.EncodeButt.Location = new System.Drawing.Point(12, 139);
             this.EncodeButt.Name = "EncodeButt";
             this.EncodeButt.Size = new System.Drawing.Size(120, 34);
             this.EncodeButt.TabIndex = 5;
@@ -145,12 +147,12 @@ namespace DVD_A
             this.ffmpegErLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.ffmpegErLbl.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.ffmpegErLbl.LinkColor = System.Drawing.Color.Maroon;
-            this.ffmpegErLbl.Location = new System.Drawing.Point(131, 244);
+            this.ffmpegErLbl.Location = new System.Drawing.Point(147, 244);
             this.ffmpegErLbl.Name = "ffmpegErLbl";
-            this.ffmpegErLbl.Size = new System.Drawing.Size(243, 13);
+            this.ffmpegErLbl.Size = new System.Drawing.Size(90, 13);
             this.ffmpegErLbl.TabIndex = 10;
             this.ffmpegErLbl.TabStop = true;
-            this.ffmpegErLbl.Text = "ffmpeg was not found 😔 Click here to download it";
+            this.ffmpegErLbl.Text = "Download ffmpeg";
             this.ffmpegErLbl.Visible = false;
             this.ffmpegErLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ffmpegErLbl_LinkClicked);
             // 
@@ -166,11 +168,41 @@ namespace DVD_A
     "put directory should be an empty folder. Encoding may overwrite existing files w" +
     "ith the same name.";
             // 
+            // mkisofsChk
+            // 
+            this.mkisofsChk.AutoCheck = false;
+            this.mkisofsChk.AutoSize = true;
+            this.mkisofsChk.Location = new System.Drawing.Point(67, 243);
+            this.mkisofsChk.Name = "mkisofsChk";
+            this.mkisofsChk.Size = new System.Drawing.Size(61, 17);
+            this.mkisofsChk.TabIndex = 12;
+            this.mkisofsChk.Text = "mkisofs";
+            this.mkisofsChk.UseVisualStyleBackColor = true;
+            this.mkisofsChk.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Red;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Maroon;
+            this.linkLabel1.Location = new System.Drawing.Point(243, 244);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(93, 13);
+            this.linkLabel1.TabIndex = 13;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Download mkisofs";
+            this.linkLabel1.Visible = false;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 272);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.mkisofsChk);
             this.Controls.Add(this.HeadLbl);
             this.Controls.Add(this.ffmpegErLbl);
             this.Controls.Add(this.DependLbl);
@@ -204,6 +236,8 @@ namespace DVD_A
         private System.Windows.Forms.Label DependLbl;
         private System.Windows.Forms.LinkLabel ffmpegErLbl;
         private System.Windows.Forms.Label HeadLbl;
+        private System.Windows.Forms.CheckBox mkisofsChk;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

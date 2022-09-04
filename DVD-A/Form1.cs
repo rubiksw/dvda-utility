@@ -20,11 +20,12 @@ namespace DVD_A
 
             ffmpegCheck.Checked = File.Exists(@"ffmpeg.exe");
             ffmpegErLbl.Visible = !File.Exists(@"ffmpeg.exe");
+            mkisofsChk.Checked = File.Exists(@"mkisofs.exe");
+            linkLabel1.Visible = !File.Exists(@"mkisofs.exe");
 
             System.Windows.Forms.ToolTip btnToolTip = new System.Windows.Forms.ToolTip();
             btnToolTip.SetToolTip(this.button1, "Choose the folder where your audio files are stored.");
             btnToolTip.SetToolTip(this.OutputSelector, "Encoded fils will be saved to this location. This will overwrite existing files with the same name.");
-
 
         }
 
@@ -95,8 +96,40 @@ namespace DVD_A
                         System.Console.WriteLine(process.StartInfo.Arguments);
                         if (iteration >= count)
                         {
+                            progressBar.Value = 50;
+                            ErrorLbl.Text = "Formatting files for DVD-A playback. Please wait!";
+
+                            Process DVDA = new Process();
+                            DVDA.StartInfo.FileName = "dvda-author.exe";
+                            DVDA.StartInfo.Arguments = "-g \u0022" + OutputPath.Text + "\\*.mlp" + "\u0022 -P0 -W -d -o \u0022" + OutputPath.Text + "\\output\u0022";
+                            System.Console.WriteLine(DVDA.StartInfo.Arguments);
+                            DVDA.StartInfo.UseShellExecute = false;
+                            DVDA.StartInfo.CreateNoWindow = true;
+                            DVDA.Start();
+                            DVDA.WaitForExit();
+
+                            progressBar.Value = 80;
+                            ErrorLbl.Text = "Creating ISO file. Almost done!";
+
+                            Process ISO = new Process();
+                            ISO.StartInfo.FileName = "mkisofs.exe";
+                            ISO.StartInfo.Arguments = "-dvd-audio -o \u0022" + OutputPath.Text + "\\dvd.iso\u0022 " + "\u0022" + OutputPath.Text + "\\output\u0022";
+
+                            System.Console.WriteLine(ISO.StartInfo.Arguments);
+                            ISO.StartInfo.UseShellExecute = true;
+                            ISO.StartInfo.CreateNoWindow = true;
+                            ISO.Start();
+                            ISO.WaitForExit();
+
                             progressBar.Value = 0;
-                            ErrorLbl.Text = "Encoding is complete. You may now close this program.";
+                            ErrorLbl.Text = "Your .ISO was successfully created and saved to " + "\u0022" + OutputPath.Text + "\u0022. Mount it with Windows and burn as \u0022Mastered Disk\u0022.";
+
+                            ProcessStartInfo MountISO = new ProcessStartInfo();
+                            MountISO.FileName = "EXPLORER.EXE";
+                            MountISO.Arguments = OutputPath.Text;
+                            Process.Start(MountISO);
+
+
                         }
                     }
                 }
@@ -137,6 +170,16 @@ namespace DVD_A
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/mkisofs-md5/mkisofs-md5-2.01-Binary.zip");
         }
     }
 }

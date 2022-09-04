@@ -14,14 +14,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="MLP Encoder.exe.manifest" size="5535">
+    <dependentAssembly dependencyType="install" codebase="MLP Encoder.exe.manifest" size="6714">
       <assemblyIdentity name="MLP Encoder.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="amd64" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iWRWwo0LCmzOO4a8d038M4idvvfn0V3L5BiIHp74rJs=</dsig:DigestValue>
+        <dsig:DigestValue>X/ga7Iu1JT2Z5efM6kDhDrMweVb4YEpe0pahSvKqEX4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
