@@ -1,0 +1,14 @@
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.csproj.AssemblyReference.cache
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD_A.Form1.resources
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD_A.Properties.Resources.resources
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.csproj.GenerateResource.cache
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.csproj.CoreCompileInputs.cache
+C:\Users\CM\source\repos\DVD-A\DVD-A\bin\Debug\DVD-A.exe.config
+C:\Users\CM\source\repos\DVD-A\DVD-A\bin\Debug\DVD-A.exe
+C:\Users\CM\source\repos\DVD-A\DVD-A\bin\Debug\DVD-A.pdb
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.exe
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.pdb
+C:\Users\CM\source\repos\DVD-A\DVD-A\bin\Debug\DVD-A.exe.manifest
+C:\Users\CM\source\repos\DVD-A\DVD-A\bin\Debug\DVD-A.application
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.exe.manifest
+C:\Users\CM\source\repos\DVD-A\DVD-A\obj\Debug\DVD-A.application
