@@ -107,7 +107,7 @@ namespace DVD_A
 
                             Process DVDA = new Process();
                             DVDA.StartInfo.FileName = "dvda-author.exe";
-                            DVDA.StartInfo.Arguments = "-g \u0022" + OutputPath.Text + "\\*.mlp" + "\u0022 -P0 -W -d -o \u0022" + OutputPath.Text + "\\output\u0022";
+                            DVDA.StartInfo.Arguments = "-g \u0022" + OutputPath.Text + "\\*.mlp" + "\u0022 -P0 -W -d -o \u0022" + OutputPath.Text + "\\DVD-A\u0022";
                             System.Console.WriteLine(DVDA.StartInfo.Arguments);
                             DVDA.StartInfo.UseShellExecute = false;
                             DVDA.StartInfo.CreateNoWindow = true;
@@ -119,10 +119,10 @@ namespace DVD_A
 
                             Process ISO = new Process();
                             ISO.StartInfo.FileName = "mkisofs.exe";
-                            ISO.StartInfo.Arguments = "-dvd-audio -o \u0022" + OutputPath.Text + "\\dvd.iso\u0022 " + "\u0022" + OutputPath.Text + "\\output\u0022";
+                            ISO.StartInfo.Arguments = "-dvd-audio -o \u0022" + OutputPath.Text + "\\dvd.iso\u0022 " + "\u0022" + OutputPath.Text + "\\DVD-A\u0022";
 
                             System.Console.WriteLine(ISO.StartInfo.Arguments);
-                            ISO.StartInfo.UseShellExecute = true;
+                            ISO.StartInfo.UseShellExecute = false;
                             ISO.StartInfo.CreateNoWindow = true;
                             ISO.Start();
                             ISO.WaitForExit();
@@ -134,7 +134,6 @@ namespace DVD_A
                             MountISO.FileName = "EXPLORER.EXE";
                             MountISO.Arguments = OutputPath.Text;
                             Process.Start(MountISO);
-
 
                         }
                     }

@@ -36,7 +36,6 @@ C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\Release\MLP Encoder.exe.manifes
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\Release\MLP Encoder.application
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\Release\MLP Encoder.exe
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\Release\MLP Encoder.pdb
-C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\Release\DVD-A.csproj.AssemblyReference.cache
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\Release\DVD_A.Form1.resources
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\Release\mlp_encoder.Properties.Resources.resources
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\Release\DVD-A.csproj.GenerateResource.cache
