@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DVD_A
@@ -23,16 +17,10 @@ namespace DVD_A
             dvdaChk.Checked = File.Exists(@"dvda-author.exe");
 
             bool passedDependCheck = (File.Exists(@"dvda-author.exe")) & (File.Exists(@"dvda-author.exe")) & (File.Exists(@"mkisofs.exe"));
-            {
-                if (!passedDependCheck) {
-                    MessageBox.Show("You are missing one or more dependencies. This application will not function without them. Please download the latest release from https://github.com/Rubik7711/dvda-utility", "Error! Missing Dependencies", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-            }
-
+            {if (!passedDependCheck) {MessageBox.Show("You are missing one or more dependencies. This application will not function without them. Please download the latest release from https://github.com/Rubik7711/dvda-utility", "Error! Missing Dependencies", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);}}
             System.Windows.Forms.ToolTip btnToolTip = new System.Windows.Forms.ToolTip();
             btnToolTip.SetToolTip(this.button1, "Choose the folder where your audio files are stored.");
             btnToolTip.SetToolTip(this.OutputSelector, "Encoded fils will be saved to this location. This will overwrite existing files with the same name.");
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,13 +33,7 @@ namespace DVD_A
                 SourcePath.Text = path;
                 SourcePath.Enabled = true;
                 SourcePath.BackColor = Color.White;
-
             }
-        }
-
-        private void SourcePath_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void OutputSelector_Click(object sender, EventArgs e)
@@ -87,9 +69,8 @@ namespace DVD_A
                 int iteration = 0;
 
                 if (Directory.Exists(SourcePath.Text)) {
-                    //ErrorLbl.Text = "Encoding files using Meridian Lossless Packing (MLP) compression. This could take a while!";
                     foreach (var file in Directory.GetFiles(SourcePath.Text, "*.*")) { 
-                        Process process = new Process();
+                        Process process = new Process();    // Encode
                         process.StartInfo.FileName = "ffmpeg";
                         process.StartInfo.Arguments = "-y -i \u0022" + file + "\u0022 -c:a mlp -strict -2 \u0022" + OutputPath.Text + "\\" + Path.GetFileNameWithoutExtension(file) + ".mlp\u0022";
                         process.StartInfo.UseShellExecute = false;
@@ -105,7 +86,7 @@ namespace DVD_A
                             progressBar.Value = 50;
                             ErrorLbl.Text = "Formatting files for DVD-A playback. Please wait!";
 
-                            Process DVDA = new Process();
+                            Process DVDA = new Process();   // Format
                             DVDA.StartInfo.FileName = "dvda-author.exe";
                             DVDA.StartInfo.Arguments = "-g \u0022" + OutputPath.Text + "\\*.mlp" + "\u0022 -P0 -W -d -o \u0022" + OutputPath.Text + "\\DVD-A\u0022";
                             System.Console.WriteLine(DVDA.StartInfo.Arguments);
@@ -117,10 +98,9 @@ namespace DVD_A
                             progressBar.Value = 80;
                             ErrorLbl.Text = "Creating ISO file. Almost done!";
 
-                            Process ISO = new Process();
+                            Process ISO = new Process();    // ISO
                             ISO.StartInfo.FileName = "mkisofs.exe";
                             ISO.StartInfo.Arguments = "-dvd-audio -o \u0022" + OutputPath.Text + "\\dvd.iso\u0022 " + "\u0022" + OutputPath.Text + "\\DVD-A\u0022";
-
                             System.Console.WriteLine(ISO.StartInfo.Arguments);
                             ISO.StartInfo.UseShellExecute = false;
                             ISO.StartInfo.CreateNoWindow = true;
@@ -151,31 +131,5 @@ namespace DVD_A
 
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ffmpegCheck_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

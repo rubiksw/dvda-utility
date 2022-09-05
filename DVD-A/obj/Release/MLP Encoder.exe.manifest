@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MLP Encoder.exe" size="247760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MLP Encoder.exe" size="247248">
       <assemblyIdentity name="MLP Encoder" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FdkzkL/N1I6WutUrpV6RBzmfYW8qEJuvV3JLtP4ML3A=</dsig:DigestValue>
+        <dsig:DigestValue>CMjJPxLHXmA+ymG+L/IBR89+5vz4BEZJn5gfWpXxHns=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -65,7 +65,6 @@ namespace DVD_A
             this.SourcePath.Size = new System.Drawing.Size(237, 20);
             this.SourcePath.TabIndex = 2;
             this.SourcePath.Text = "C:\\Users\\RC\\Music\\Library";
-            this.SourcePath.TextChanged += new System.EventHandler(this.SourcePath_TextChanged);
             // 
             // OutputSelector
             // 
@@ -108,7 +107,6 @@ namespace DVD_A
             this.ErrorLbl.Name = "ErrorLbl";
             this.ErrorLbl.Size = new System.Drawing.Size(0, 13);
             this.ErrorLbl.TabIndex = 6;
-            this.ErrorLbl.Click += new System.EventHandler(this.label1_Click);
             // 
             // progressBar
             // 
@@ -116,7 +114,6 @@ namespace DVD_A
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(362, 23);
             this.progressBar.TabIndex = 7;
-            this.progressBar.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // ffmpegCheck
             // 
@@ -128,7 +125,6 @@ namespace DVD_A
             this.ffmpegCheck.TabIndex = 8;
             this.ffmpegCheck.Text = "ffmpeg";
             this.ffmpegCheck.UseVisualStyleBackColor = true;
-            this.ffmpegCheck.CheckedChanged += new System.EventHandler(this.ffmpegCheck_CheckedChanged);
             // 
             // DependLbl
             // 
@@ -161,7 +157,6 @@ namespace DVD_A
             this.mkisofsChk.TabIndex = 12;
             this.mkisofsChk.Text = "mkisofs";
             this.mkisofsChk.UseVisualStyleBackColor = true;
-            this.mkisofsChk.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // dvdaChk
             // 
@@ -196,7 +191,6 @@ namespace DVD_A
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "DVD-A Utility";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
