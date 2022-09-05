@@ -15,5 +15,3 @@ ffmpeg -> https://ffmpeg.org/about.html
 dvda-author -> https://github.com/fabnicol/dvda-author
 
 mkisofs -> https://wiki.osdev.org/Mkisofs
-
-![dvda-util](https://i.imgur.com/7JjLwGB.png)
