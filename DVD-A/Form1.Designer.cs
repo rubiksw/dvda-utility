@@ -42,6 +42,7 @@ namespace DVD_A
             this.HeadLbl = new System.Windows.Forms.Label();
             this.mkisofsChk = new System.Windows.Forms.CheckBox();
             this.dvdaChk = new System.Windows.Forms.CheckBox();
+            this.CleanupBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -141,11 +142,11 @@ namespace DVD_A
             this.HeadLbl.Location = new System.Drawing.Point(13, 9);
             this.HeadLbl.MaximumSize = new System.Drawing.Size(365, 200);
             this.HeadLbl.Name = "HeadLbl";
-            this.HeadLbl.Size = new System.Drawing.Size(348, 39);
+            this.HeadLbl.Size = new System.Drawing.Size(347, 39);
             this.HeadLbl.TabIndex = 11;
             this.HeadLbl.Text = "Your media should be stored as individual tracks in the source directory. The out" +
-    "put directory should be an empty folder. Encoding may overwrite existing files w" +
-    "ith the same name.";
+    "put directory should be an empty folder. (Optional) Cleanup will remove the titl" +
+    "e set after creating the disk.";
             // 
             // mkisofsChk
             // 
@@ -170,11 +171,23 @@ namespace DVD_A
             this.dvdaChk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dvdaChk.UseVisualStyleBackColor = true;
             // 
+            // CleanupBox
+            // 
+            this.CleanupBox.AutoSize = true;
+            this.CleanupBox.Location = new System.Drawing.Point(309, 243);
+            this.CleanupBox.Name = "CleanupBox";
+            this.CleanupBox.Size = new System.Drawing.Size(65, 17);
+            this.CleanupBox.TabIndex = 15;
+            this.CleanupBox.Text = "Cleanup";
+            this.CleanupBox.UseVisualStyleBackColor = true;
+            this.CleanupBox.CheckedChanged += new System.EventHandler(this.CleanupBox_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 272);
+            this.Controls.Add(this.CleanupBox);
             this.Controls.Add(this.dvdaChk);
             this.Controls.Add(this.mkisofsChk);
             this.Controls.Add(this.HeadLbl);
@@ -209,6 +222,7 @@ namespace DVD_A
         private System.Windows.Forms.Label HeadLbl;
         private System.Windows.Forms.CheckBox mkisofsChk;
         private System.Windows.Forms.CheckBox dvdaChk;
+        private System.Windows.Forms.CheckBox CleanupBox;
     }
 }
 

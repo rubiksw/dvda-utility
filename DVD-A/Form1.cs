@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace DVD_A
@@ -108,7 +109,18 @@ namespace DVD_A
                             ISO.WaitForExit();
 
                             progressBar.Value = 0;
-                            ErrorLbl.Text = "Your .ISO was successfully created and saved to " + "\u0022" + OutputPath.Text + "\u0022. Mount it with Windows and burn as \u0022Mastered Disk\u0022.";
+                            ErrorLbl.Text = "Your .ISO was successfully created. Mount it with Windows and burn as \u0022Mastered Disk\u0022.";
+
+                            if (CleanupBox.Checked)
+                            {
+                                Directory.Delete(OutputPath.Text + "\\DVD-A",true);
+
+                                string[] filesToDelete = Directory.GetFiles(OutputPath.Text, "*.mlp");
+                                filesToDelete.ToList().ForEach(mlp => File.Delete(mlp));
+
+
+
+                            }
 
                             ProcessStartInfo MountISO = new ProcessStartInfo();
                             MountISO.FileName = "EXPLORER.EXE";
@@ -130,6 +142,11 @@ namespace DVD_A
                 }
 
             }
+        }
+
+        private void CleanupBox_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
