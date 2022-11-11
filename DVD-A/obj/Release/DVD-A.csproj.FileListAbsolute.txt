@@ -47,3 +47,23 @@ C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\Release\MLP Encoder.exe
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\obj\Release\MLP Encoder.pdb
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\Release\dvda-author.exe
 C:\Users\CM\Documents\Repos\mlp-encode\DVD-A\bin\Release\cygwin1.dll
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\DVD-A.csproj.AssemblyReference.cache
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\DVD-A.csproj.SuggestedBindingRedirects.cache
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\DVD_A.Form1.resources
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\mlp_encoder.Properties.Resources.resources
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\DVD-A.csproj.GenerateResource.cache
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\DVD-A.csproj.CoreCompileInputs.cache
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\MLP Encoder.TrustInfo.xml
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\MLP Encoder.exe.manifest
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\MLP Encoder.exe
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\MLP Encoder.pdb
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\cygwin1.dll
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\dvda-author.exe
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\ffmpeg.exe
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\mkisofs.exe
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\MLP Encoder.exe.config
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\MLP Encoder.exe.manifest
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\MLP Encoder.application
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\MLP Encoder.exe
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\bin\Release\MLP Encoder.pdb
+C:\Users\CM\Source\Repos\dvda-utility\DVD-A\obj\Release\MLP Encoder.application
