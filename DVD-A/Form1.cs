@@ -18,7 +18,7 @@ namespace DVD_A
             dvdaChk.Checked = File.Exists(@"dvda-author.exe");
 
             bool passedDependCheck = (File.Exists(@"dvda-author.exe")) & (File.Exists(@"dvda-author.exe")) & (File.Exists(@"mkisofs.exe"));
-            { if (!passedDependCheck) { MessageBox.Show("You are missing one or more dependencies. This application will not function without them. Please download the latest release from https://github.com/Rubik7711/dvda-utility", "Error! Missing Dependencies", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); } }
+            { if (!passedDependCheck) { MessageBox.Show("You are missing one or more dependencies. This application will not function without them. Please download the latest release from https://github.com/rubiksw/dvda-utility", "Error! Missing Dependencies", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); } }
             System.Windows.Forms.ToolTip btnToolTip = new System.Windows.Forms.ToolTip();
             btnToolTip.SetToolTip(this.button1, "Choose the folder where your audio files are stored.");
             btnToolTip.SetToolTip(this.OutputSelector, "Encoded fils will be saved to this location. This will overwrite existing files with the same name.");
